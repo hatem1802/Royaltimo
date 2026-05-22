@@ -167,4 +167,34 @@ a {
     background: #7c3aed;
 }
 
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Step image fixed target size with responsive fallback */
+.step-image {
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+@media (max-width: 480px) {
+    .step-image {
+        width: 100%;
+        height: auto;
+        max-width: 144px;
+        
+    }
+    .step-badge {
+        width: 44px;
+        height: 44px;
+        font-size: 1.05rem;
+    }
+}
+
 
